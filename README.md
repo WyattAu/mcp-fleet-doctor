@@ -1,4 +1,8 @@
-# mcp-doctor
+# mcp-fleet-doctor
+
+> Named `mcp-fleet-doctor` as of 2026-10-31 (ADR-0001): the generic name
+> collided with an unrelated MCP security scanner; this tool's scope is the
+> OpenCode fleet audit, and the name now says so. Old URLs redirect.
 
 Audit an [OpenCode](https://opencode.ai) MCP fleet: what the config declares,
 whether the backends exist, whether the credentials are *entitled*, and -
