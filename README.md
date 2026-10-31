@@ -40,13 +40,13 @@ Design rules that shaped it:
 ## Usage
 
 ```sh
-mcp-doctor                        # cheap checks against the default config
-mcp-doctor --config /path/to/opencode.jsonc
-mcp-doctor --deep                 # also spawn servers and handshake (slow)
-mcp-doctor --only credential      # filter by check-id prefix
-mcp-doctor --format json          # machine-readable
-mcp-doctor --list-checks
-mcp-doctor --strict               # warnings become failures
+mcp-fleet-doctor                        # the CLI binary keeps the crate name until the next breaking publish (ADR-0001); cheap checks against the default config
+mcp-fleet-doctor --config /path/to/opencode.jsonc
+mcp-fleet-doctor --deep                 # also spawn servers and handshake (slow)
+mcp-fleet-doctor --only credential      # filter by check-id prefix
+mcp-fleet-doctor --format json          # machine-readable
+mcp-fleet-doctor --list-checks
+mcp-fleet-doctor --strict               # warnings become failures
 ```
 
 Exit codes: `0` no failures · `1` at least one failure · `2` usage error.
