@@ -1,18 +1,18 @@
 # Changelog
 
 All notable changes to this project are documented here. Format: [Keep a
-Changelog](https://keepachangelog.com/) — versions follow [semver](https://semver.org).
+Changelog](https://keepachangelog.com/); versions follow [semver](https://semver.org).
 
 ## [0.1.0] - 2026-10-17
 
 ### Added
-- `mcp-doctor-core` — pure domain: `Finding`, `Severity`, `Probe`, `Registry`,
+- `mcp-doctor-core`; pure domain: `Finding`, `Severity`, `Probe`, `Registry`,
   `Report`. No I/O, no MCP knowledge, deterministic text/JSON rendering.
-- `mcp-doctor-probes` — four checks: `config.declared` (JSONC parse and schema
+- `mcp-doctor-probes`; four checks: `config.declared` (JSONC parse and schema
   completeness), `backend.present` (executable resolution and runnability),
   `credential.entitled` (gh token presence, authentication, scopes),
   `handshake.initialize` (real MCP `initialize` under `--deep`).
-- `mcp-doctor-cli` — clap front-end; exit codes 0/1/2, `--strict`, `--only`,
+- `mcp-doctor-cli`; clap front-end; exit codes 0/1/2, `--strict`, `--only`,
   `--list-checks`, `--format json`.
 - 52 tests: no network, no subprocesses, no fixtures on disk.
 

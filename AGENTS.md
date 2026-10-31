@@ -1,4 +1,4 @@
-# AGENTS.md — working in mcp-doctor
+# AGENTS.md: working in mcp-doctor
 
 This repo implements the estate contract from
 [WyattAu/engineering-standards](https://github.com/WyattAu/engineering-standards).

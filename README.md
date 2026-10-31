@@ -1,8 +1,8 @@
 # mcp-doctor
 
 Audit an [OpenCode](https://opencode.ai) MCP fleet: what the config declares,
-whether the backends exist, whether the credentials are *entitled*, and —
-with `--deep` — whether the servers actually complete an MCP handshake.
+whether the backends exist, whether the credentials are *entitled*, and -
+with `--deep`; whether the servers actually complete an MCP handshake.
 
 Written after a real failure: the fleet's `github` server pointed at
 `api.githubcopilot.com/mcp/`, which silently never authenticated. Nothing in
@@ -80,7 +80,7 @@ Why split this way:
 
 1. Implement `Probe` in a new module under `mcp-doctor-probes/src/`.
 2. Register it in `standard_registry`.
-3. Add tests using `crate::testing::CtxBuilder` — no real processes.
+3. Add tests using `crate::testing::CtxBuilder`; no real processes.
 
 If a check needs to change, no file in `mcp-doctor-cli` should have to change
 with it. That is the test of whether the layering is real.

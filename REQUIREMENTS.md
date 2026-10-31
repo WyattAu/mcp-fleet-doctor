@@ -1,4 +1,4 @@
-# Requirements — mcp-doctor
+# Requirements: mcp-doctor
 
 ## Problem
 
